@@ -56,10 +56,10 @@ def close_the_file():
     bin_file.close()
 
 
-#----------------------------- utilitie functions ----------------------------------------
+#----------------------------- utility functions ----------------------------------------
 
 def word_to_byte(addr, index , lowerfirst):
-    value = (addr >> ( 8 * ( index -1)) & 0x000000FF )
+    value = (addr >> (8 * (index - 1)) & 0x000000FF)
     return value
 
 def get_crc(buff, length):
